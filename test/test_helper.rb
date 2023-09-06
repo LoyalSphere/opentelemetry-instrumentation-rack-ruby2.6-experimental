@@ -6,8 +6,11 @@
 
 require 'bundler/setup'
 Bundler.require(:default, :development, :test)
+require 'rack/events'
+require 'opentelemetry-instrumentation-rack'
 
 require 'minitest/autorun'
+require 'rspec/mocks/minitest_integration'
 require 'webmock/minitest'
 
 # global opentelemetry-sdk setup:
