@@ -23,11 +23,14 @@ Gem::Specification.new do |spec|
                Dir.glob('*.md') +
                ['LICENSE', '.yardopts']
   spec.require_paths = ['lib']
-  spec.required_ruby_version = '>= 3.0'
+  #spec.required_ruby_version = '>= 3.0'
+  spec.required_ruby_version = '>= 2.6'
 
   spec.add_dependency 'opentelemetry-api', '~> 1.0'
-  spec.add_dependency 'opentelemetry-common', '~> 0.20.0'
-  spec.add_dependency 'opentelemetry-instrumentation-base', '~> 0.22.1'
+  #spec.add_dependency 'opentelemetry-common', '~> 0.20.0' #Ruby 3.0
+  spec.add_dependency 'opentelemetry-common', '~> 0.19.7' #Ruby 2.6
+  #spec.add_dependency 'opentelemetry-instrumentation-base', '~> 0.22.1' #Ruby 3.0
+  spec.add_dependency 'opentelemetry-instrumentation-base', '~> 0.21.1'  #Ruby 2.6
 
   spec.add_development_dependency 'appraisal', '~> 2.2.0'
   spec.add_development_dependency 'bundler', '~> 2.4'
