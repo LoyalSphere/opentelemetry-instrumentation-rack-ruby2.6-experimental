@@ -1,8 +1,8 @@
-# OpenTelemetry Rack Instrumentation
+# OpenTelemetry Rack Instrumentation Ruby 2.6 Experimental
 
-## Note: This is a version of the opentelemetry-instrumentation-rack v0.23.4 gem modified to run on Ruby 2.6 and up. This has been given the version number v0.21.23.4.
+## Note: This is a version of the opentelemetry-instrumentation-rack v0.23.4 gem modified to run on Ruby 2.6 and up. This has been given the version number v0.22.23.4.
 
-## This gem is required by the modded opentelemetry-instrumentation-grape gem (v0.0.1.4) that was adapted to run on Ruby 2.6 and up.
+## This gem is required by the modded opentelemetry-instrumentation-grape gem (v0.0.1.4) that was adapted to run on Ruby 2.6 and up. This modded gem can be found at https://github.com/LoyalSphere/opentelemetry-instrumentation-grape-ruby2.6-experimental
 The Rack instrumentation is a community-maintained instrumentation for the [Rack][rack-home] web server interface.
 
 ## How do I get started?
